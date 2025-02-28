@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOWER OF HANOI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><p> Tower Of Hanoi</p> </div>
+    
+    <div class="container">
+      <div class="inputs">
+        <label for="discNums" style="font-size: 20px;">Number of Discs</label>
+        <select name="discNums" id="discNums">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" >3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button id="selectorButton"> Select Discs</button>
+        <button onclick="start()">start</button>
+      </div>
+        
+      <div class="game">
+
+          <div class="peg" id="peg1" style="background-color: aqua;">
+            <div class="tower" id="tower1"></div>
+            <div class="base"></div> 
+          </div>
+            
+          <div class="peg" id="peg2" style="background-color: fuchsia;">
+            <div class="tower" id="tower2"></div>
+            <div class="base"></div> 
+          </div>
+
+          <div class="peg" id="peg3" style="background-color: gray;">
+            <div class="tower" id="tower3"></div>
+            <div class="base"></div> 
+          </div>
+        
+      </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
